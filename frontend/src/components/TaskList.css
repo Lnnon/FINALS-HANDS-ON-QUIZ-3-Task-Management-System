@@ -1,0 +1,84 @@
+.tasklist-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.tasklist-icon {
+  font-size: 2.2rem;
+  color: #5b5bd6;
+  display: block;
+  margin-bottom: 4px;
+}
+.tasklist-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+.tasklist-subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+.tasklist-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 24px;
+}
+@media (max-width: 700px) {
+  .tasklist-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.tasklist-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.tasklist-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+.tasklist-badge {
+  font-size: 0.95rem;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-weight: 600;
+}
+.badge-pending {
+  background: #5b5bd6;
+  color: #fff;
+}
+.badge-completed {
+  background: #e0fbe2;
+  color: #22c55e;
+  border: 1px solid #bbf7d0;
+}
+
+.tasklist-empty {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  padding: 32px 12px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.tasklist-error {
+  color: #dc2626;
+  background: #fee2e2;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  margin-top: 12px;
+  text-align: center;
+}

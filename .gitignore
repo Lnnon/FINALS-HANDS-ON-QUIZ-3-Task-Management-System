@@ -1,0 +1,26 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django database and logs
+*.sqlite3
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Static/media (optional, if generated)
+staticfiles/
+media/

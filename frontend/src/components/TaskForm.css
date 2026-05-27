@@ -1,0 +1,59 @@
+.taskform {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 8px 8px 8px 18px;
+  background: #fff;
+  margin: 18px 0 0 0;
+  gap: 10px;
+  position: relative;
+}
+.taskform-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #64748b;
+  background: transparent;
+  padding: 8px 0;
+}
+.taskform-input::placeholder {
+  color: #b0b8c9;
+}
+.taskform-btn {
+  background: #5b5bd6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.taskform-btn:hover {
+  background: #4338ca;
+}
+.taskform-error {
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  color: #dc2626;
+  background: #fee2e2;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  width: 100%;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .taskform {
+    flex-direction: column;
+    padding: 12px;
+    gap: 8px;
+  }
+  .taskform-btn {
+    width: 100%;
+  }
+}

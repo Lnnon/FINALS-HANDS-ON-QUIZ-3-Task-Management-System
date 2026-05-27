@@ -1,0 +1,25 @@
+.app-bg {
+  min-height: 100vh;
+  background: #f3f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(80, 80, 180, 0.10);
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 800px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 700px) {
+  .app-card {
+    padding: 20px 6px;
+    min-height: 0;
+  }
+}

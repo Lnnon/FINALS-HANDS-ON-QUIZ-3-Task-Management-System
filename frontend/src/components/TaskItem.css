@@ -1,0 +1,65 @@
+.taskitem {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid #5b5bd6;
+  transition: background 0.2s, border-color 0.2s;
+}
+.taskitem-completed {
+  border-left: 4px solid #22c55e;
+}
+.taskitem-title {
+  font-size: 1rem;
+  color: #1e293b;
+  flex: 1;
+  transition: color 0.2s;
+}
+.taskitem-title.done {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+.taskitem-actions {
+  display: flex;
+  gap: 8px;
+}
+.taskitem-btn {
+  border: none;
+  background: #e0e7ff;
+  color: #5b5bd6;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+.taskitem-btn.complete {
+  background: #5b5bd6;
+  color: #fff;
+}
+.taskitem-btn.complete:hover {
+  background: #4338ca;
+}
+.taskitem-btn.undo {
+  background: #e0fbe2;
+  color: #22c55e;
+}
+.taskitem-btn.undo:hover {
+  background: #bbf7d0;
+}
+.taskitem-btn.delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.taskitem-btn.delete:hover {
+  background: #fecaca;
+}
+@media (max-width: 700px) {
+  .taskitem {
+    padding: 12px 8px;
+  }
+}
