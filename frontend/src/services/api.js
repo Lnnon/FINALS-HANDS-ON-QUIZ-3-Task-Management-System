@@ -1,4 +1,4 @@
-const API_URL = 'https://lennonjarabese.pythonanywhere.com/api/tasks/';
+const API_URL = 'https://lennonjarabese.pythonanywhere.com/api/';
 
 export const getTasks = async () => {
   const res = await fetch(API_URL);
